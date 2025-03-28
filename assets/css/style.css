@@ -1,61 +1,246 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font starting */
 .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-   
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 
-  .robot-regular{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  /* end of font adding */
+}
 
- header{
-    display: flex;
-    /* flex-direction:row; */
-    justify-content: space-between;
-    align-items: center;
-    /* padding-left: 112px; */
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    /* margin-left: 112px;
+/* end of font adding */
+
+header {
+  display: flex;
+  /* flex-direction:row; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 112px; */
+
+  /* margin-left: 112px;
     margin-right: 112px;
     margin-top: 40px; */
 
-    /* margin:40px 112.5px 13px 112px; */
-    
+  /* margin:40px 112.5px 13px 112px; */
 
- }
 
- a{
-    text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.header {
+  padding-top: 40px;
+}
+ /* S */
+.nav-links .link {
+  margin-right: 4px;
+
+}
+
+header nav a {
+  color: #000;
+}
+
+header nav {
+  display: none;
+}
+
+/* introduction start */
+/* descendant selector */
+
+.introduction .intro-left-side h1 span{
+  color: #FF8A56;
+}
+.introduction .intro-left-side h1{
+  margin-top: 42px ;
+  font-size: 37px;
+  margin-bottom: 27px;
+ 
+}
+
+.intro-right-side {
+  width: 300px;
+  
+}
+
+.intro-right-side img {
+  margin-top: 42px ;
+  width: 100%;
+ 
+}
+
+.intro-left-side p{
+  color: #666;
+  font-size: 18px;
+  /* margin-top: 27px; */
+  padding-bottom: 10px;
+}
+/* a:nth-child(1) or a:first-child*/
+.intro-left-side  .book-a-call .book-btn {
+  background: #222;
+  color: #fff;
+  width: 151px;
+  height: 58px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: 1s ease;
+}
+.intro-left-side  .book-a-call .book-btn:hover{
+  background-color: antiquewhite ;
+  transform:rotateX(90deg) ;
+}
+.download-cv{
+  margin-left: 15px;
+  color: #000;
+}
+
+.arrow{
+  margin-left: 4px;
+}
+
+/* Introduction end */
+
+/* companies start*/
+.companies h5{
+ /* font-size: 18px; */
+ text-align: center;
+ margin-top: 30px;
+}
+
+.partners{
+  display: flex;
+  
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 79.73px;
+}
+
+.company:nth-child(3),
+.company:nth-child(4) {
+    display: none;
+} 
+/* companies end */
+
+/* services start */
+
+.services h6{
+  /* font-size: 22px; */
+  margin-top: 80.27px;
+  text-align: center;
+  color: #FF8A56;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.services h2{
+  /* font-size: 54px; */
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 114.73px;
+}
+
+.services ul{
+  list-style-type: square;
+  font-size: 16px;
+  padding-left: 18px;
+
+}
+
+.services ul li {
+  padding-bottom: 10.73px;
+}
+
+.services .services-icon{
+  width: 70px;
+}
+.services-card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+  gap: 20px;
+  /* padding-right: 90px; */
+} 
+
+.services-card .headline-card{
+  font-size: 24px;
+  margin-top: 39px;
+  margin-bottom: 25px;
+}
+
+.services-card .description-card{
+  font-size: 16px;
+  padding-bottom:21.73px;
+}
+
+.card{
+  border:none;
+}
+/* services end */
+
+
+/* mobile first */
+/* 476px telefon 768 planshet 991pc 1024 iri ekran 1400 tv */
+
+@media (min-width:768px) {
+  .fa-bars {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .introduction {
+    display: flex;
+    justify-content: space-between;
    
- }
+  }
 
- header nav a {
-   color: #000;
- }
+  .introduction .intro-left-side h1{
+    font-size: 3rem;
+  }
 
- header nav{
-   display: none;
- }
+  .intro-right-side{
+    width: 400px;
+    
+  }
+ 
+  .intro-right-side img{
+    margin-left: 35px;
+    
+  }
+  /* partners starts */
 
- @media (min-width:768px) {
-   .fa-bars{
-      display: none;
-   }
-   header nav{
-      display: flex;
-      gap: 3px;
-      align-items: center;
-    }
- }
- /* mobile first */
+  .company:nth-child(3){
+    display: flex;
+  }
+  
+}
+
+@media (min-width:992px){
+
+  .introduction .intro-left-side h1{
+    font-size: 4.5rem;
+  }
+
+  /* partners start */
+
+  .company:nth-child(4){
+    display: flex;
+  }
+}
 
 /*  
  .about-tag{
@@ -66,4 +251,3 @@
  .Services-tag{
    text-decoration: line-through;
  } */
-  

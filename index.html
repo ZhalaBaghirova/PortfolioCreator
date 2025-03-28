@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="This is portfolio creator.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrap Content Delivery Network(CDN) link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="./assets/images/favicon.avif" type="image/x-icon">
-<!-- font awesom cdn linki -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/images/image.png" type="image/x-icon">
+    <!-- font awesom cdn linki -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio Creator</title>
 </head>
- 
+
 <body>
-   <!-- header -->
-    <header>
-        <img src="./assets/images/logo.svg" alt="">
+    <div class="container">
+        <!-- <marquee>  My first HTML Website!</marquee> -->
+        <!-- header section start -->
+        <header class="header">
+            <img src="./assets/images/logo.svg" alt="">
 
-        <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
 
-        <nav>
-            <a href="#" class="about-tag robot-regular">About</a>
-            <a href="#" class="Services-tag robot-regular">Services</a>
-            <a href="#" class="link robot-regular">Projects</a>
-            <a href="#" class="link robot-regular">Blogs</a>
-            <a href="#" class="link robot-regular">Book a call</a>
-        </nav>
-            
+            <nav class="nav-links">
+                <a href="#" class="link roboto-regular">About</a>
+                <a href="#" class="link roboto-regular">Services</a>
+                <a href="#" class="link roboto-regular">Projects</a>
+                <a href="#" class="link roboto-regular">Blogs</a>
+                <a href="#" class="link roboto-regular">Book a call</a>
+            </nav>
+
+
+
+        </header>
+        <!-- header section end -->
+         <!-- first introduction start -->
+          <!-- html 5 semantika elementleri- menasi olan tagler -->
+        <section class="introduction">
+
+            <div class="intro-left-side">
+                <h1 class="intro-h1 roboto-bold">
+                    
+                    <span>I design products</span> <br> that delight and <br> inspire people.
+                </h1>
+<!-- SEO Search Engine Optimization -->
+ <!-- i(talic)-em(phasize)-b(old)-strong-del(eted-ustunden xett)-ins(erted altdan xett)-mark(highlighted) -->
+                <p>
+                    Hi! <em>I’m Jake</em> , a product designer based in Berlin. I create <br> user-friendly interfaces for fast-growing startups.
+                </p>
+
+                <div class="book-a-call">
+                    <a href="#" class="book-btn"> Book a call</a>
+                    <a href="#" class="download-cv"> Download CV <img src="/assets/images/introduction/arrow.svg" alt="" class="arrow"></a>
+                    </div>
+            </div>
+
+            <div class="intro-right-side">
+                <img src="./assets/images/introduction/jake.svg" alt="">
+            </div>
+
+        </section>
+        <!-- first introduction end -->
+
+        <!-- partner companies start -->
+        <section class="companies">
+
+            <h5 class="roboto-regular">Trusted By</h5>
+            <div class="partners">
+                <div class="company">
+                    <img src="/assets/images/partners/company1.svg" alt="">
+                </div>
+
+                <div class="company">
+                    <img src="/assets/images/partners/company2.svg" alt="">
+                </div>
+
+                <div class="company">
+                    <img src="/assets/images/partners/company3.svg" alt="">
+                </div>
+
+                <div class="company">
+                    <img src="/assets/images/partners/company4.svg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+        <!-- partner companies end -->
+
+        <!-- services start -->
+        <section class="services">
+            <h6 class="roboto-bold">SERVICES</h6>
+            <h2 class="roboto-bold">Design that solves problems, <br>one procuct at a time.</h2>
+            <div class="services-card">
+
+                <div class="card">
+                        <img src="/assets/images/services/service1.svg" alt="" class="services-icon">
+                        <h5 class="headline-card roboto-bold">What I can do for you</h5>
+                     <small class="description-card roboto-regular">Faster, better products that your <br> users love. Here's all the services I <br> provide:</small>
+        <!-- unordered list -->
+      
+                         <ul class="breakpoints roboto-bold">
+                            <li>Design Strategy</li>
+                            <li>Web and Mobile App Design</li>
+                            <li>Web and Mobile App Design</li>
+                        </ul>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/images/services/service2.svg" alt="" class="services-icon">
+                    <h5 class="headline-card roboto-bold">Applications I'm fluent in</h5>
+                 <small class="description-card roboto-regular">Every designer needs the right <br> tools to do the perfect job. <br> Thankfully, I'm multilingual.</small>
+    <!-- unordered list -->
+  
+                     <ul class="breakpoints roboto-bold">
+                     <li>Sketch</li>
+                     <li>Webflow</li>
+                     <li>Figma</li>
+                    </ul>
+            </div>
+
+            <div class="card">
+                <img src="/assets/images/services/service3.svg" alt="" class="services-icon">
+                <h5 class="headline-card roboto-bold">What you can expect</h5>
+             <small class="description-card roboto-regular">I design products that are more <br> than pretty. I make them shippable <br> and usable.</small>
+<!-- unordered list -->
+
+                 <ul class="breakpoints roboto-bold">
+                 <li>Clean and functional</li>
+                 <li>Device and user friendly</li>
+                 <li>Efficient and maintainable</li>
+                </ul>
+        </div>
+
+
+
+            </div>
+        </section>
         
-        
-    </header>
+        <!-- services end -->
+</div>
+
 </body>
+
+
 </html>
